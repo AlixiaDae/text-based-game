@@ -1,0 +1,87 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    margin: 0 auto;
+    background-color: rgb(28, 27, 27);
+    flex-direction: column;
+}
+
+.main-box {
+    grid-area: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color: whitesmoke;
+}
+
+.log-box {
+    grid-area: 2;
+    display: flex;
+    margin: 0 auto;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    width: 100vw;
+}
+
+.main-box,
+.log-box {
+    border: 5px double rgb(85, 255, 85);
+    border-radius: 10px;
+}
+
+.command-line {
+    width: 75%;
+    height: 30px;
+    padding-left: 10px;
+    background-color: rgb(28, 27, 27);
+    border: 3px solid rgb(85, 255, 85);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+/*Commands and story text css. Note that text-commands are not currently in-use*/
+
+.game-line,
+.text-command,
+.player-action,
+.player-command-line {
+    padding: 2px;
+    color: whitesmoke;
+}
+
+.text-command,
+.player-action {
+    font-weight: bold;
+}
+
+/*Action buttons*/
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.command-line:focus {
+    outline: none;
+}
+
+.action-button:hover {
+    text-decoration: underline;
+    font-size: 22px;
+    margin: -1px;
+}
